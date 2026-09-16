@@ -486,6 +486,31 @@ section + section {
 
 .bio-block h3:first-child { margin-top: 0; }
 
+.judge-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.judge-list li {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+}
+
+.judge-list li:last-child {
+  border-bottom: none;
+}
+
+.judge-list .yr {
+  display: inline-block;
+  min-width: 6.5em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 6px;
+}
+
 /* ---------- Gallery ---------- */
 
 .gallery-grid {
