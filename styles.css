@@ -167,45 +167,96 @@ nav.main-nav a.active {
 
 /* ---------- Hero ---------- */
 
-.hero {
-  position: relative;
-  min-height: 62vh;
+.hero-split {
   display: flex;
-  align-items: flex-end;
-  background: #111 center 30% / cover no-repeat;
-  color: #fff;
+  min-height: 80vh;
+  background: var(--ink);
+  overflow: hidden;
 }
 
-.hero::after {
+.hero-text {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  padding: 64px 6vw;
+  position: relative;
+}
+
+.hero-text::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.75) 100%);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: var(--accent);
 }
 
-.hero .container {
-  position: relative;
-  padding-bottom: 56px;
+.hero-text-inner {
+  max-width: 440px;
 }
 
-.hero .eyebrow {
+.hero-text .eyebrow {
   display: inline-block;
   font-size: 0.78rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #f2c9c9;
-  margin-bottom: 14px;
+  color: var(--accent);
+  background: rgba(179, 39, 45, 0.12);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
 }
 
-.hero h1 {
+.hero-text h1 {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
-.hero p.lead {
-  max-width: 46em;
-  color: #eee;
+.hero-text p.lead {
+  color: #cfcfcf;
   font-size: 1.05rem;
+  margin-bottom: 28px;
+}
+
+.hero-photo {
+  flex: 1 1 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(17,17,17,0.35) 0%, rgba(17,17,17,0) 18%);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .hero-split {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .hero-photo {
+    height: 52vh;
+    order: -1;
+  }
+  .hero-text {
+    padding: 40px 24px;
+  }
+  .hero-text::before {
+    width: 100%;
+    height: 6px;
+    bottom: auto;
+  }
 }
 
 .page-hero {
@@ -512,4 +563,13 @@ footer.site-footer a { color: var(--ink-soft); }
   max-width: 220px;
   border-radius: var(--radius);
   border: 1px solid var(--line);
+}
+
+.bio-block .project-photo {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: 16px 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
