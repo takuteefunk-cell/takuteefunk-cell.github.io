@@ -505,3 +505,11 @@ footer.site-footer {
 }
 
 footer.site-footer a { color: var(--ink-soft); }
+
+.archive-item .archive-flyer {
+  display: block;
+  margin-top: 10px;
+  max-width: 220px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
