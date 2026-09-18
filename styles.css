@@ -598,3 +598,54 @@ footer.site-footer a { color: var(--ink-soft); }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+
+/* ---------- Pricing card ---------- */
+
+.pricing-card {
+  max-width: 380px;
+  margin-top: 32px;
+  padding: 32px 28px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.pricing-amount {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.pricing-amount .yen {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: 4px;
+  color: var(--ink-soft);
+}
+
+.pricing-list {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+}
+
+.pricing-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+}
+
+.pricing-list li:last-child {
+  border-bottom: none;
+}
+
+.pricing-cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
