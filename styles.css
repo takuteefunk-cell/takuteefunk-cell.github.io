@@ -453,8 +453,8 @@ section + section {
 .archive-year {
   margin-top: 56px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
   align-items: stretch;
 }
 
@@ -474,10 +474,10 @@ section + section {
   flex-direction: column;
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 18px 18px 20px;
-  font-size: 0.92rem;
-  line-height: 1.7;
+  border-radius: 8px;
+  padding: 14px 14px 16px;
+  font-size: 0.8rem;
+  line-height: 1.6;
   color: var(--ink-soft);
   overflow: hidden;
 }
@@ -486,8 +486,8 @@ section + section {
   display: block;
   color: var(--accent);
   font-weight: 700;
-  font-size: 1rem;
-  margin: 0 0 8px;
+  font-size: 0.88rem;
+  margin: 0 0 6px;
 }
 
 /* ---------- Bio ---------- */
@@ -647,9 +647,9 @@ footer.site-footer a { color: var(--ink-soft); }
 .archive-item .archive-flyer {
   order: -1;
   display: block;
-  width: calc(100% + 36px);
+  width: calc(100% + 28px);
   max-width: none;
-  margin: -18px -18px 14px;
+  margin: -14px -14px 12px;
   border: 0;
   border-bottom: 1px solid var(--line);
   border-radius: 0;
