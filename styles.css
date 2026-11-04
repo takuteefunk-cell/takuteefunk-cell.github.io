@@ -736,18 +736,17 @@ footer.site-footer a { color: var(--ink-soft); }
   box-sizing: border-box;
 }
 
-.archive-photos {
+.photo-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
-  margin-top: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
 }
 
-.archive-photos img {
+.photo-gallery img {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 4px;
   display: block;
 }
 
@@ -756,4 +755,10 @@ footer.site-footer a { color: var(--ink-soft); }
   font-size: 0.72rem;
   color: var(--ink-soft);
   text-align: right;
+}
+
+.archive-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.8rem;
 }
