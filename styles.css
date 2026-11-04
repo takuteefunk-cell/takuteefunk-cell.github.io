@@ -735,3 +735,25 @@ footer.site-footer a { color: var(--ink-soft); }
   text-align: center;
   box-sizing: border-box;
 }
+
+.archive-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.archive-photos img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+}
+
+.archive-credit {
+  margin: 6px 0 0;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  text-align: right;
+}
